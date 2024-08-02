@@ -1,0 +1,19 @@
+server:
+  address: 0.0.0.0
+  port: 9999
+spring:
+  application:
+    name: ms-client-oauth2
+  banner:
+    location: banner/banner.txt
+service:
+  auth:
+    client-id: app-simecr
+    client-secret: SkFcVaMPaeAwq19IaSTiFCwgvns4OY0E
+    issuer-url: http://127.0.0.1:8080/auth/realms/municusco
+  redis:
+    config:
+      cache:
+        host: 127.0.0.1
+        port: 6379
+        password: admin-redis
